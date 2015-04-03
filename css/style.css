@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+/*@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");*/
+@import url("http://fonts.googleapis.com/css?family=Carrois+Gothic|Kaushan+Script|Cinzel|Rock+Salt|Shadows+Into+Light+Two|Roboto:100,300,100italic,300italic")
 
 /*
 	Landed by HTML5 UP
@@ -1640,7 +1641,6 @@
 					margin: 0.5em 0 0 0;
 					font-size: 2.5em;
 					top: 0;
-					font-family: "Lucida Console";
 					-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		     	   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-o-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
