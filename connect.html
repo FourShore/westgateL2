@@ -35,7 +35,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="teaching.html">Teaching</a></li>
 						<li><a href="smallgroups.html">Small Groups</a></li>
-						<li><a href="serve.html">Serve</a></li>
+						<!--li><a href="serve.html">Serve</a></li-->
 						<li><a href="connect.html" class="button special">Connect</a></li>
 					</ul>
 				</nav>
@@ -43,19 +43,19 @@
 
 		<!-- Main -->
 			<div id="main" class="wrapper style1">
-				<div class="container">
+				<div class="container">					<form action="http://www.westgatel2.org/cgi-sys/formmail.pl" method="post" class="container 50%">
+					<input type="hidden" name="recipient" value="mail@westgatel2.org"> 
+					<input type="hidden" name="subject" value="WestgateL2"> 
+					<input type="hidden" name="redirect" value="http://westgatel2.org/connect.html">
 					<header>
 						<h2>Send us a message!</h2>
 					</header>
-					<form action="http://www.westgatel2.org/cgi-sys/formmail.pl" method="post" class="container 50%">
-					<input type="hidden" name="recipient" value="mail@westgatel2.org"> 
-					<input type="hidden" name="subject" value="Test0"> 
-					<input type="hidden" name="redirect" value="http://westgatel2.org/connect.html">
+
 						<div class="row uniform 50%">
 							<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
 						</div>
 						<div class="row uniform 50%">
-							<div class="8u 12u$(xsmall)"><input type="text" name="tellme" id="emailText" placeholder="Type Stuff" /></div>
+							<div class="12u 12u$(medium)"><input type="text" name="tellme" id="emailText" style="height:200px;"/></div>
 						</div>
 						<div class="row uniform 50%">
 							<div class="4u$ 12u$(xsmall)"><input type="submit" value="Send" class="fit special" /></div>
