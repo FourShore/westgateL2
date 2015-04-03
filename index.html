@@ -31,6 +31,10 @@
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
+				<h1 id="logo">
+					<a href="http://www.facebook.com/westgateL2" class="icon fa-facebook" style="margin-right:8px;"></a>
+					<a href="http://www.instagram.com/westgateL2" class="icon fa-instagram"></a>
+				</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -151,14 +155,12 @@
 			</section-->
 
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="http://www.facebook.com/westgateL2" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="http://www.instagram.com/westgateL2" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>Drew@westgatechurch.org</li><li>408.313.8594</li>
-				</ul>
-			</footer>
+			<footer id="footer"></footer>
 	</body>
+
+	<script> 
+	    $(function(){
+	      $("#footer").load("footer.html"); 
+	    });
+    </script> 
 </html>
