@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
 /*@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");*/
-@import url("http://fonts.googleapis.com/css?family=Carrois+Gothic|Kaushan+Script|Cinzel|Rock+Salt|Shadows+Into+Light+Two|Roboto:100,300,100italic,300italic");
+@import url(http://fonts.googleapis.com/css?family=Questrial|Oswald|Trocchi);
 
 /*
 	Landed by HTML5 UP
@@ -29,7 +29,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Questrial", sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -52,7 +52,7 @@
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #ffdba2;
 		font-weight: 300;
 	}
 
@@ -65,7 +65,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		font-family: 'Oswald', sans-serif;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1165,6 +1165,14 @@
 			position: absolute;
 		}
 
+		.spotlight .content.maroon {
+			background: #62202d;
+		}
+
+		.spotlight .noBorder {
+			border-style: none;
+		}
+
 		.spotlight .goto-next {
 			-moz-transform: -moz-translate(0,0);
 			-webkit-transform: -webkit-translate(0,0);
@@ -1285,7 +1293,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #3f3d41;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -1552,12 +1560,31 @@
 		z-index: 21;
 	}
 
+	.intro-description {
+		border: 2.5px dotted #ffdba2;
+		padding: 2.5em;
+	}
+
+	.intro-data {
+		display: inline-block;
+		width: 49%;
+		text-align: center;
+	}
+
+	.intro-data.time {
+		border-right: 2px solid #ffdba2;
+	}
+
+	.intro-data.place {
+		border-left: 2px solid #ffdba2;
+	}
+
 /* Banner */
 
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../images/saltBlue.jpg");
+		background-image: url("../images/L2-logo-header.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -1578,11 +1605,11 @@
 
 		#banner:after,
 		#teaching:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
+			/*background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
 			background-image: -o-linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url("images/overlay.png");;*/
 			content: '';
 			display: block;
 			height: 100%;
