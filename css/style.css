@@ -972,9 +972,9 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #e44c65;
 			box-shadow: none;
 			color: #ffffff !important;
+			border: 2px solid;
 		}
 
 			input[type="submit"].special:hover,
@@ -1003,6 +1003,12 @@
 			color: #ffffff !important;
 			cursor: default;
 			opacity: 0.25;
+		}
+
+		#contact-us-button {
+			display: initial;
+			padding-top: 3px;
+			padding-bottom: 3px;
 		}
 
 /* Goto Next */
