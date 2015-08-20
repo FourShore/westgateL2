@@ -127,6 +127,7 @@
 	                for (var i = 0, l = resp.data.length; i < l; i++) {
 	                    var event = resp.data[i];
 	                    // process events here...
+	                    $("#events-table").append('<tr><td>'+event.name+'</td><td>'+event.start_time+'</td><td>'+event.description+'</td></tr>')
 	                }
 	            }
 	            else 
