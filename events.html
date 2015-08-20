@@ -147,7 +147,7 @@
 	   }(document, 'script', 'facebook-jssdk'));
 
 	  function getEvents() {
-	        FB.api('/me/events','GET',{access_token:'CAACEdEose0cBAFhgPCQsU3F8ALmsi3xwY5YKTeXr2IGPkDfgnHMcYZBKYiLlhFn3MohcdDKZCQNAlC6TZBY3gbYTB3XOYfbYwJTFRKKHVvrbAf4vNZB1IRqv1EEkvo41aqN9TJgGjReyj6mcnlsJRDubexZBrYQv3Dd5C2eSjtZC8TLn7fn6i956hIi4Xz1pMm5kU1p7fKuQZDZD'},  function (resp) {
+	        FB.api('/westgateL2/events','GET',{access_token:'CAACEdEose0cBAFhgPCQsU3F8ALmsi3xwY5YKTeXr2IGPkDfgnHMcYZBKYiLlhFn3MohcdDKZCQNAlC6TZBY3gbYTB3XOYfbYwJTFRKKHVvrbAf4vNZB1IRqv1EEkvo41aqN9TJgGjReyj6mcnlsJRDubexZBrYQv3Dd5C2eSjtZC8TLn7fn6i956hIi4Xz1pMm5kU1p7fKuQZDZD'},  function (resp) {
 	            if (resp.data !== undefined) {
 	                for (var i = 0, l = resp.data.length; i < l; i++) {
 	                    var event = resp.data[i];
