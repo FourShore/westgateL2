@@ -154,7 +154,7 @@
 	   }(document, 'script', 'facebook-jssdk'));
 
 	  function getEvents() {
-	        FB.api('/westgateL2/events', function (resp) {
+	        FB.api('/westgateL2/events','GET',{}, function (resp) {
 	            if (resp.data !== undefined) {
 	                for (var i = 0, l = resp.data.length; i < l; i++) {
 	                    var event = resp.data[i];
