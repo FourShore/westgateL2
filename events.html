@@ -53,7 +53,7 @@
 
 							<!-- Content -->
 								<section id="content">
-									<a class="image fit"><img src="images/sgMain.jpg" alt="" /></a>
+									<a class="image fit"><img src="" alt="" /></a>
 									<h3>Small Groups</h3>
 									<p>We believe that being a community is about more than just a once a week gathering. Small groups help us build strong relationships that are centered on knowing God and gives us a chance to ask real questions. You get to meet new people, make lifelong friends, and join in on what God is doing in the Bay Area. So whether you're new to this Jesus thing or have been walking with Him for a while, small group is the place for you. Check out the times below and see where you can get plugged in.</p>
 									
@@ -152,5 +152,18 @@
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
+
+	  function getEvents() {
+	        FB.api('/westgateL2/events', function (resp) {
+	            if (resp.data !== undefined) {
+	                for (var i = 0, l = resp.data.length; i < l; i++) {
+	                    var event = resp.data[i];
+	                    // process events here...
+	                }
+	            }
+	            else 
+	            alert('darn');           
+	        });
+	    }
 	</script>
 </html>
