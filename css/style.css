@@ -316,15 +316,6 @@
 		text-align: center;
 	}
 
-		header.major:after {
-			background: #e44c65;
-			content: '';
-			display: inline-block;
-			height: 0.2em;
-			max-width: 20em;
-			width: 75%;
-		}
-
 	footer.major {
 		margin: 4em 0 0 0;
 	}
@@ -681,6 +672,19 @@
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+		}
+
+		.image.fit:hover {
+			opacity: 0.6;
+			-moz-transition: opacity .6s ease;
+			-webkit-transition: opacity .6s ease;
+			-o-transition: opacity .6s ease;
+			-ms-transition: opacity .6s ease;
+			transition: opacity .6s ease;
+		}
+
+		.image.fit.clear {
+			margin: 0;
 		}
 
 			.image.fit img {
