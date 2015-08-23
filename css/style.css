@@ -1227,7 +1227,7 @@
 			height: 101%;
 			padding: 6em 3em;
 			top: 0;
-			width: 52%;
+			width: 28em;
 		}
 
 		.spotlight.left .content {
@@ -1578,20 +1578,21 @@
 	.intro-description {
 		border: 2.5px dotted #ffdba2;
 		padding: 2.5em;
+		padding-bottom: 0;
 	}
 
 	.intro-data {
 		display: inline-block;
 		width: 49%;
 		text-align: center;
+		min-width: 200px;
+		padding-bottom: 2.5em;
 	}
 
 	.intro-data.time {
-		border-right: 2px solid #ffdba2;
 	}
 
 	.intro-data.place {
-		border-left: 2px solid #ffdba2;
 	}
 
 /* Banner */
