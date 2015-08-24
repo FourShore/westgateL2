@@ -674,7 +674,7 @@
 			width: 100%;
 		}
 
-		.image.fit.clear:hover {
+		.image.fit.clear:hover > img {
 			opacity: 0.6;
 			-moz-transition: opacity .6s ease;
 			-webkit-transition: opacity .6s ease;
@@ -690,6 +690,11 @@
 			.image.fit img {
 				width: 100%;
 			}
+
+		.imageText {
+			text-align: center;
+			color: #ffffff !important;
+		}
 
 /* List */
 
