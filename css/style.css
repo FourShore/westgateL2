@@ -674,7 +674,7 @@
 			width: 100%;
 		}
 
-		.image.fit:hover {
+		.image.fit.clear:hover {
 			opacity: 0.6;
 			-moz-transition: opacity .6s ease;
 			-webkit-transition: opacity .6s ease;
