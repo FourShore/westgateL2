@@ -28,7 +28,7 @@
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: #f1e6e1;
 		font-family: "Questrial", sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -983,8 +983,8 @@
 		.button.special {
 			box-shadow: none;
 			background-color: #62202d;
-			color: #ffffff !important;
-			border: 2px solid;
+			color: #ffdba2 !important;
+			border: 1px solid #ffdba2;
 		}
 
 			input[type="submit"].special:hover,
@@ -1019,7 +1019,7 @@
 			display: initial;
 			padding-top: 3px;
 			padding-bottom: 3px;
-			border: 2px solid;
+			border: 1px solid;
 		}
 
 /* Goto Next */
@@ -1259,6 +1259,10 @@
 
 		.spotlight.style3 .content {
 			border-color: #39c088;
+		}
+
+		.spotlight.style4 .content {
+			border-color: #32717a;
 		}
 
 		.spotlight.inactive .content {
@@ -1540,6 +1544,7 @@
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						font-family: oswald regular, sans-serif;
 					}
 
 						#header nav ul li a.button, #header nav ul li span.button {
