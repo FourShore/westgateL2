@@ -74,8 +74,10 @@
 										<tbody>
 										</tbody>
 									</table-->
-<div data-tockify-component="calendar" data-tockify-calendar="westgatel2"></div>
-<script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+									<div id="event-cal">
+										<div data-tockify-component="calendar" data-tockify-calendar="westgatel2"></div>
+									</div>
+									<script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 								</section>
 						</div>
 						<div class="4u$ 12u$(medium)">
@@ -112,37 +114,9 @@
 			<!--footer id="footer"></footer-->
 	</body>
 
-	<!--script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '1610562515861939',
-	      xfbml      : true,
-	      version    : 'v2.4'
-	    });
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-
-	  function getEvents() {
-	        FB.api('/westgateL2/events','GET',{access_token:'CAACEdEose0cBAFhgPCQsU3F8ALmsi3xwY5YKTeXr2IGPkDfgnHMcYZBKYiLlhFn3MohcdDKZCQNAlC6TZBY3gbYTB3XOYfbYwJTFRKKHVvrbAf4vNZB1IRqv1EEkvo41aqN9TJgGjReyj6mcnlsJRDubexZBrYQv3Dd5C2eSjtZC8TLn7fn6i956hIi4Xz1pMm5kU1p7fKuQZDZD'},  function (resp) {
-	            if (resp.data !== undefined) {
-	                for (var i = 0, l = resp.data.length; i < l; i++) {
-	                    var event = resp.data[i];
-	                    // process events here...
-	                    $("#events-table").append('<tr><td>'+event.name+'</td><td>'+event.start_time+'</td><td>'+event.description+'</td></tr>')
-	                }
-	            }
-	            else 
-	            alert('darn');           
-	        });
-	    }
-
-	    window.onload = getEvents;
-	</script-->
+	<script>
+	  var cal = $('#event-cal');
+	  var iframe = document.getElementsByName('tkf-client-window-embed-fullcalendar-1');
+	  var element = iframe[0];
+	</script>
 </html>

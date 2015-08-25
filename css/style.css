@@ -1773,3 +1773,7 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+
+	a.ng-scope.u-pullRight.branding-subtle.is-embedded {
+		display: none;
+	}
