@@ -18,6 +18,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -37,7 +38,7 @@
 					<a href="http://www.facebook.com/westgateL2" class="icon fa-facebook" style="margin-right:12px;"></a>
 					<a href="http://www.instagram.com/westgateL2" class="icon fa-instagram" style="margin-right:12px;"></a>
 					<a href="https://vimeo.com/user27054503/albums" class="icon fa-vimeo-square" style="margin-right:12px;"></a>
-					<a class="icon fa-wechat" title="To receive text updates on events, hangouts, and announcements send a text message to "></a>
+					<a href="#" class="icon fa-wechat tooltip" title="To receive text updates on events, hangouts, and announcements text @westgateL to 408.320.0155"></a>
 				</div>
 				<nav id="nav">
 					<ul>
@@ -77,4 +78,14 @@
 			</div>
 
 	</body>
+
+	<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+            	trigger: 'click',
+            	position: 'bottom',
+            	offsetY: 6
+            });
+        });
+    </script>
 </html>
