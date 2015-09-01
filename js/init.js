@@ -42,7 +42,7 @@
 					titleBar: {
 						breakpoints: 'small',
 						height: 44,
-						html: '<div class="title" style="position:absolute;width:100%"><a href="http://www.facebook.com/westgateL2" class="icon fa-facebook" style="margin-right:1em;"></a><a href="http://www.instagram.com/westgateL2" class="icon fa-instagram" style="margin-right:1em;"></a><a href="https://vimeo.com/user27054503/albums" class="icon fa-vimeo-square" style="margin-right:1em;"></a><a href="#" class="icon fa-wechat tooltip" style="margin-right:1em;" title="To receive text updates on events, hangouts, and announcements text @westgateL to 408.320.0155"></a></div>' + '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyText" data-args="logo"></span>',
+						html: '<div class="title" style="position:absolute;width:100%"><a href="http://www.facebook.com/westgateL2" class="icon fa-facebook" style="margin-right:1em;"></a><a href="http://www.instagram.com/westgateL2" class="icon fa-instagram" style="margin-right:1em;"></a><a href="https://vimeo.com/user27054503/videos/sort:date/format:thumbnail" class="icon fa-vimeo-square" style="margin-right:1em;"></a><a href="#" class="icon fa-wechat tooltip" style="margin-right:1em;" title="To receive text updates on events, hangouts, and announcements text @westgateL to 408.320.0155"></a></div>' + '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyText" data-args="logo"></span>',
 						position: 'top-left',
 						side: 'top',
 						width: '100%'
