@@ -1830,6 +1830,7 @@
 .tooltipster-base {
 	padding: 0;
 	font-size: 0;
+	font-family: 'Questrial', sans-serif;
 	line-height: 0;
 	position: absolute;
 	left: 0;
