@@ -18,6 +18,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -37,7 +38,7 @@
 					<a href="http://www.facebook.com/westgateL2" class="icon fa-facebook" style="margin-right:12px;"></a>
 					<a href="http://www.instagram.com/westgateL2" class="icon fa-instagram" style="margin-right:12px;"></a>
 					<a href="https://vimeo.com/user27054503/albums" class="icon fa-vimeo-square" style="margin-right:12px;"></a>
-					<a class="icon fa-wechat" title="To receive text updates on events, hangouts, and announcements send a text message to "></a>
+					<a class="icon fa-wechat tooltip" style="cursor:pointer;" title="To receive text updates on events, hangouts, and announcements text @westgateL to 408.320.0155"></a>
 				</div>
 				<nav id="nav">
 					<ul>
@@ -61,6 +62,7 @@
 								<section id="content">
 									<!--a class="image fit"><img src="" alt="" /></a-->
 									<h2><b>L2 Calendar</b></h3>
+									<p>We desire to be more than a gathering, we want to be a community. Join us at our events to connect with people, make friends, deepen relationships, and have fun.</p>
 									<!--p>We believe that being a community is about more than just a once a week gathering. Small groups help us build strong relationships that are centered on knowing God and gives us a chance to ask real questions. You get to meet new people, make lifelong friends, and join in on what God is doing in the Bay Area. So whether you're new to this Jesus thing or have been walking with Him for a while, small group is the place for you. Check out the times below and see where you can get plugged in.</p>
 									
 									<table id="events-table" style="table-layout:fixed;">
@@ -74,8 +76,10 @@
 										<tbody>
 										</tbody>
 									</table-->
-<div data-tockify-component="calendar" data-tockify-calendar="westgatel2"></div>
-<script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+									<div id="event-cal">
+										<div data-tockify-component="calendar" data-tockify-calendar="westgatel2"></div>
+									</div>
+									<script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 								</section>
 						</div>
 						<div class="4u$ 12u$(medium)">
@@ -84,10 +88,10 @@
 								<section id="sidebar">
 									<section>
 										<h2><b>Got a Question?</b></h2>
-										<p>Email this person or click this button.</p>
+										<p>Shoot us an email! We'd love to help</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="#" class="button">Coming Soon!</a></li>
+												<li><a href="index.html#five" class="button">Coming Soon!</a></li>
 											</ul>
 										</footer>
 									</section>
@@ -112,37 +116,19 @@
 			<!--footer id="footer"></footer-->
 	</body>
 
-	<!--script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '1610562515861939',
-	      xfbml      : true,
-	      version    : 'v2.4'
-	    });
-	  };
+	<script>
+	  var cal = $('#event-cal');
+	  var iframe = document.getElementsByName('tkf-client-window-embed-fullcalendar-1');
+	  var element = iframe[0];
+	</script>
 
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-
-	  function getEvents() {
-	        FB.api('/westgateL2/events','GET',{access_token:'CAACEdEose0cBAFhgPCQsU3F8ALmsi3xwY5YKTeXr2IGPkDfgnHMcYZBKYiLlhFn3MohcdDKZCQNAlC6TZBY3gbYTB3XOYfbYwJTFRKKHVvrbAf4vNZB1IRqv1EEkvo41aqN9TJgGjReyj6mcnlsJRDubexZBrYQv3Dd5C2eSjtZC8TLn7fn6i956hIi4Xz1pMm5kU1p7fKuQZDZD'},  function (resp) {
-	            if (resp.data !== undefined) {
-	                for (var i = 0, l = resp.data.length; i < l; i++) {
-	                    var event = resp.data[i];
-	                    // process events here...
-	                    $("#events-table").append('<tr><td>'+event.name+'</td><td>'+event.start_time+'</td><td>'+event.description+'</td></tr>')
-	                }
-	            }
-	            else 
-	            alert('darn');           
-	        });
-	    }
-
-	    window.onload = getEvents;
-	</script-->
+	<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+            	trigger: 'click',
+            	position: 'bottom',
+            	offsetY: 6
+            });
+        });
+    </script>
 </html>
